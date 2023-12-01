@@ -63,7 +63,7 @@ def predict_z(catalog_df,
 def download_from_zenodo(file_name, output_path):
     if not os.path.exists(file_name):
         subprocess.run(['wget',
-                        'https://zenodo.org/records/10220009/files/' + file_name, output_path + file_name])
+                        'https://zenodo.org/records/10220009/files/' + file_name, '-O', output_path + file_name])
         print(f'File {file_name} has been downloaded')
     else:
         print(f'File {file_name} has been already downloaded')
