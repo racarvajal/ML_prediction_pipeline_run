@@ -1,4 +1,4 @@
-# ML_redshift_prediction_HETDEX
+# Prediction of radio-detectable AGN with Machine Learning pipeline
 
 Jupyter notebook with example script to load and run prediction pipeline from Carvajal et al., 2023. (https://arxiv.org/abs/2309.11652)
 
