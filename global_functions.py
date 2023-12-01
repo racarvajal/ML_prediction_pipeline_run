@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 from pycaret import classification as pyc
 from pycaret import regression as pyr
+import os
+import subprocess
 
 def predict_AGN_gal(catalog_df, 
                     AGN_gal_model, 
@@ -57,3 +59,11 @@ def predict_z(catalog_df,
     catalog_df = catalog_df.rename(columns={'Label': 'pred_Z_rAGN'})
     catalog_df.loc[:, 'pred_Z_rAGN'] = np.around(catalog_df.loc[:, 'pred_Z_rAGN'], decimals=4)
     return catalog_df
+
+def download_from_zenodo(file_name, output_path):
+    if not os.path.exists(file_name):
+        subprocess.run(['wget',
+                        'https://zenodo.org/records/10220009/files/' + file_name, output_path + file_name], check=True, text=True)
+        print(f'File {file_name} has been downloaded')
+    else:
+        print(f'File {file_name} has been already downloaded')
