@@ -18,6 +18,10 @@ full_z_model       = 'regression_redshift'
 cal_AGN_gal_model  = 'cal_' + AGN_gal_model + '.joblib'
 cal_radio_model    = 'cal_' + radio_model   + '.joblib'
 
+# Classification uncalibrated thresholds
+AGN_thresh         = 0.5000115951
+radio_thresh       = 0.9815369877
+
 # Classification calibrated thresholds
 cal_AGN_thresh     = 0.34895 # 0.34895396724527294
 cal_radio_thresh   = 0.20460 # 0.2046047064139296
