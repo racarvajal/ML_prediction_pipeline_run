@@ -1,6 +1,6 @@
 # Prediction of radio-detectable AGN with Machine Learning pipeline
 
-Jupyter notebook with example script to load and run prediction pipeline from Carvajal et al., 2023. (https://arxiv.org/abs/2309.11652)
+Jupyter notebook with example script to load and run prediction pipeline from Carvajal et al. (2023). Article can be found at https://doi.org/10.1051/0004-6361/202245770 and https://arxiv.org/abs/2309.11652 
 
 Data and model files can be obtained from [Zenodo](https://zenodo.org/records/10220009)
 
